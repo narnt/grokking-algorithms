@@ -24,4 +24,8 @@ def search(name): #search person with'y' in person's name
                 print(person)
                 searched.append(person)
                 
+<<<<<<< HEAD
 search("you")
+=======
+search("you")
+>>>>>>> 8202e2af31c511e4d5676ce35c6327690a2d8d9f
