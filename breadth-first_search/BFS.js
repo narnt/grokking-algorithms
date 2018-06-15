@@ -9,8 +9,6 @@ graph["jonny"] = []
 
 class Deque {
     constructor() {
-        this._oldestIndex = 0;
-        this._newestIndex = 0;
         this._storage = [];
     }
     size() {
@@ -30,7 +28,7 @@ function search(name) { //search person with 'y' in person's name
     search_queue.enqueue(graph[name]);
     let searched = [];
     let person;
-    while (search_queue._storage != []) {
+    while (search_queue.size() > 0) {
         person = search_queue.dequeue();
         if (searched.indexOf(person) == -1) {
             if (/y/.test(person)) {
